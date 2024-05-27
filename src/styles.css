@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header_active {
+    color: #00856F !important;
+    border-bottom: #00856F !important;
+}
