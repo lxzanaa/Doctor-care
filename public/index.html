@@ -85,7 +85,7 @@
     </div>
   </header>
 
-  <section class="bg-[#DCE9E2] pb-14 pt-10 md:pt-0">
+  <section class="bg-[#DCE9E2] lg:pb-14 md:pb-[100px] pb-[252px] pt-10 md:pt-0">
     <div class="max-w-[1180px] px-5 mx-auto md:flex items-center justify-between gap-12 relative">
       <div class="text-center md:text-left mb-[60px] md:mb-0" >
         <p class="text-[#00856F] text-sm font-bold leading-5 mb-4 ">BOAS-VINDAS A DOCTORCARE 👋</p>
@@ -98,12 +98,12 @@
       </div>
       <div>
         <img class="max-w-[420px] md:flex hidden" src="./img/hero/hero.png" alt="hero">
-        <img class="max-w-[420px] w-full flex md:hidden mx-auto" src="./img/hero/hero.png" alt="hero">
+        <img class="max-w-[261.64px] w-full flex md:hidden mx-auto" src="./img/hero/hero.png" alt="hero">
       </div>
 
 
       <div
-        class="text-center max-w-[1180px] w-full py-14 bg-[#FFFAF1]  px-5 mx-auto grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-0 gap-[60px] justify-between items-center absolute lg:bottom-[-157px] md:bottom-[-294px] bottom-[-486px]">
+        class="border border-[#DCE9E2] rounded-md text-center max-w-[1180px] w-full py-14 bg-[#FFFAF1]  px-5 mx-auto grid md:grid-cols-3 grid-cols-1 md:gap-0 gap-[60px] justify-between items-center absolute lg:bottom-[-157px] md:bottom-[-294px] bottom-[-486px]">
         <div class="lg:pr-[100px] lg:pl-[120px] lg:border-r-[#00856F] lg:border-r ">
           <h3 class="text-[#212529] font-bold text-5xl leading-[62.4px] mb-1">+3.500</h3>
           <p class="text-[#00856F] text-base leading-6">Pacientes atendidos</p>
@@ -122,14 +122,14 @@
 
   </section>
 
-  <section class="pt-64 pb-40 bg-[#F7F9F9]">
+  <section class="md:pt-64 pt-[318px] md:pb-40 pb-14 bg-[#F7F9F9]">
     <div class="max-w-[1180px] px-5 mx-auto ">
       <div class="text-center mb-16">
         <p class="text-[#00856F] font-bold text-sm leading-5 mb-4">SERVIÇOS</p>
-        <h2 class="text-[#212529] font-bold text-[40px] leading-[52.08px]">Como podemos ajudá-lo <br> a se sentir
+        <h2 class="text-[#212529] font-bold md:text-[40px] text-3xl leading-9 md:leading-[52.08px]">Como podemos <br class="md:hidden block" > ajudá-lo <br class="md:block hidden" > a se sentir
           melhor?</h2>
       </div>
-      <div class="grid grid-cols-3 gap-10 ">
+      <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 ">
         <div class="p-6 bg-white rounded-md border-[#DCE9E2] border">
           <img class="mb-4" src="./img/hero/check-mark.svg" alt="check-mark">
           <h3 class="text-[#212529] font-bold text-2xl leading-8 mb-4">Problemas digestivos</h3>
@@ -175,13 +175,13 @@
   </section>
 
   <section class="bg-[#FFFAF1] py-40">
-    <div class="max-w-[1180px] px-5 mx-auto flex items-center justify-between gap-16">
+    <div class="max-w-[1180px] px-5 mx-auto md:flex items-center justify-between gap-16">
       <div>
-        <img class="max-w-[480px]" src="./img/Pic.png" alt="picture">
+        <img class="max-w-[480px] w-full md:mb-0 md:flex hidden" src="./img/Pic.png" alt="picture">
       </div>
-      <div>
+      <div class="md:mb-0 mb-16" >
         <p class="text-[#00856F] font-bold text-sm leading-5 mb-3 uppercase">SOBRE NÓS</p>
-        <h2 class="text-[#212529] font-bold text-[40px] leading-[52.08px] mb-6">Entenda quem somos <br> e por que
+        <h2 class="text-[#212529] font-bold text-[30px] md:text-[40px] leading-10 md:leading-[52.08px] mb-6">Entenda quem somos <br> e por que
           existimos</h2>
         <p class="max-w-[573px] text-[#495057] text-base leading-6">Amet minim mollit non deserunt ullamco est sit
           aliqua dolor do amet sint. Velit officia consequat duis enim.
@@ -190,13 +190,17 @@
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
       </div>
+
+      <div>
+        <img class="max-w-[480px] w-full md:mb-0 md:hidden flex" src="./img/Pic.png" alt="picture">
+      </div>
     </div>
   </section>
 
   <section class="py-40">
-    <div class="max-w-[1180px] px-5 mx-auto flex items-center justify-between">
-      <div>
-        <h3 class="text-[#212529] font-bold text-[40px] leading-[52.08px] mb-10">Entre em contato <br> com a gente!</h3>
+    <div class="max-w-[1180px] px-5 mx-auto md:flex items-center justify-between">
+      <div class="md:mb-0 mb-16" >
+        <h3 class="text-[#212529] font-bold text-[30px] md:text-[40px] leading-10 md:leading-[52.08px] mb-10">Entre em contato <br> com a gente!</h3>
         <ul class="flex flex-col gap-4 mb-10">
           <li><a class="flex items-center gap-2 " href="#"><span><img class="flex" src="./img/contact/map.svg"></span>R.
               Amauri Souza, 346</a></li>
@@ -208,14 +212,14 @@
               class="flex" src="./img/hero/whatsapp.svg"></span>Agende sua consulta</button>
       </div>
       <div>
-        <img class="max-w-[575px] flex" src="./img/man-with-phone.png" alt="man-with-phone">
+        <img class="max-w-[575px] w-full flex" src="./img/man-with-phone.png" alt="man-with-phone">
       </div>
     </div>
   </section>
 
   <footer class="bg-[#00856F] py-20">
-    <div class="max-w-[1180px] px-5 mx-auto flex items-center justify-between">
-      <div>
+    <div class="max-w-[1180px] px-5 mx-auto md:flex items-center justify-between">
+      <div class="md:mb-0 mb-8" >
         <h2 class="text-white text-4xl mb-6">Doctor<span class="font-semibold">Care</span></h2>
         <p class="text-[#FFFAF1] text-sm leading-5 mb-4">©2022 - DoctorCare.</p>
         <p class="text-[#FFFAF1] text-sm leading-5">Todos os direitos reservados.</p>
