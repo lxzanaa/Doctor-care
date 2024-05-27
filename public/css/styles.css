@@ -569,8 +569,20 @@ video {
 .h-screen {
   height: 100vh;
 }
+.h-\[32px\] {
+  height: 32px;
+}
+.h-\[42px\] {
+  height: 42px;
+}
 .w-full {
   width: 100%;
+}
+.w-\[32px\] {
+  width: 32px;
+}
+.w-\[42px\] {
+  width: 42px;
 }
 .max-w-\[1180px\] {
   max-width: 1180px;
@@ -687,6 +699,10 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.bg-red-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
 }
 .p-6 {
   padding: 1.5rem;
@@ -838,6 +854,9 @@ video {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.text-\[currentColor\] {
+  color: currentColor;
+}
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -864,6 +883,18 @@ video {
   font-weight: 700 !important;
 }
 
+.btn_hover:hover {
+  background-color: transparent;
+  transition: .3s ease;
+  color: #00856F;
+}
+
+.header_btn_hover:hover {
+  transition: .3s ease;
+  color: white;
+  background-color: #00856F;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -881,6 +912,28 @@ video {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #00856F;
+}
+
+.hover\:bg-\[\]:hover {
+  background-color: ;
+}
+
+.hover\:bg-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:text-\[\]:hover {
+  color: ;
+}
+
+.hover\:text-\[\#00856F\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 133 111 / var(--tw-text-opacity));
+}
+
+.hover\:opacity-80:hover {
+  opacity: 0.8;
 }
 
 .active\:opacity-80:active {
