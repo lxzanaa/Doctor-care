@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.header_active {
+.header_active   {
     color: #00856F !important;
-    border-bottom: #00856F !important;
+    border-bottom: 1px solid #00856F !important;
+    font-weight: 700 !important;
 }
