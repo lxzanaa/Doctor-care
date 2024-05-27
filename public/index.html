@@ -6,13 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-  <header id="header" class="bg-[#DCE9E2] pt-4 pb-3 transition-colors duration-300">
-    <div class="max-w-[1180px] px-5 mx-auto flex items-center justify-between">
+  <header id="header" class="bg-[#DCE9E2] pt-4 pb-3 transition-colors duration-300 ">
+    <div class="max-w-[1180px] wow animate__animated animate__fadeInDown px-5 mx-auto flex items-center justify-between">
       <a href="index.html" class="text-black lg:text-4xl md:text-3xl text-2xl"> Doctor<span
           class="text-[#00856F] font-semibold">Care</span></a>
       <div>
@@ -39,6 +41,7 @@
         </svg>
       </button>
     </div>
+
     <div id="mobile_menu"
       class="transition-all w-full lg:hidden fixed bg-[#00856F] h-screen z-20 top-0 text-center -left-full">
       <div class="flex justify-between items-center px-5 py-4 mb-[60px]">
@@ -86,10 +89,9 @@
     </div>
   </header>
 
-
   <section class="bg-[#DCE9E2] lg:pb-14 md:pb-[100px] pb-[252px] pt-10 md:pt-0">
     <div class="max-w-[1180px] px-5 mx-auto md:flex items-center justify-between gap-12 relative">
-      <div class="text-center md:text-left mb-[60px] md:mb-0">
+      <div class="text-center md:text-left mb-[60px] md:mb-0 wow animate__animated animate__fadeInLeft">
         <p class="text-[#00856F] text-sm font-bold leading-5 mb-4 ">BOAS-VINDAS A DOCTORCARE 👋</p>
         <h1 class="text-[#212529] md:text-[52px] text-4xl font-bold leading-[44.2px] md:leading-[67.6px] mb-6 ">
           Assistência médica simplificada para
@@ -100,14 +102,14 @@
           class="inline-flex items-center gap-2 rounded-full text-white font-bold text-base leading-5 py-4 px-8 bg-[#00856F] border-[#00856F] border"><span><img
               class="flex" src="./img/hero/whatsapp.svg"></span>Agende sua consulta</a>
       </div>
-      <div>
+      <div class="wow animate__animated animate__fadeInRight" >
         <img class="max-w-[420px] md:flex hidden" src="./img/hero/hero.png" alt="hero">
         <img class="max-w-[261.64px] w-full flex md:hidden mx-auto" src="./img/hero/hero.png" alt="hero">
       </div>
 
 
       <div
-        class="  max-w-[1180px] w-full   px-5 mx-auto   justify-between items-center absolute lg:bottom-[-157px] md:bottom-[-200px] bottom-[-486px] left-0">
+        class="wow animate__animated animate__fadeInUp  max-w-[1180px] w-full   px-5 mx-auto   justify-between items-center absolute lg:bottom-[-157px] md:bottom-[-200px] bottom-[-486px] left-0">
         <div
           class="bg-[#FFFAF1] w-full grid md:grid-cols-3 grid-cols-1 border border-[#DCE9E2] text-center rounded-md py-14 md:gap-0 gap-[60px]">
           <div class="lg:pr-[100px] lg:pl-[120px] lg:border-r-[#00856F] lg:border-r ">
@@ -301,10 +303,8 @@
         });
 
         if (activeLink) {
-          activeLink.classList.add('text-white');
-          activeLink.classList.add('border-white');
-          activeLink.classList.remove('text-[#00856F]');
-          activeLink.classList.remove('border-[#00856F]');
+          activeLink.classList.add('active_2');
+          activeLink.classList.remove('header_active');
         }
 
       } else {
@@ -325,14 +325,14 @@
           item.classList.remove('text-white');
         });
 
-        if (activeLink) {
-          activeLink.classList.remove('text-white');
-          activeLink.classList.remove('border-white');
-          activeLink.classList.add('text-[#00856F]');
-          activeLink.classList.add('border-[#00856F]');
+        const activeLinkWithActive2 = document.querySelector('.active_2');
+        if (activeLinkWithActive2) {
+          activeLinkWithActive2.classList.add('header_active');
+          activeLinkWithActive2.classList.remove('active_2');
         }
       }
     });
+
   </script>
 </body>
 

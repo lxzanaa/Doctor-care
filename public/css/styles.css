@@ -846,11 +846,14 @@ video {
     border-bottom: 1px solid #00856F !important;
     font-weight: 700 !important;
 }
-
+.avtive_2{
+    color: white !important;
+    border-bottom: 1px solid white !important;
+    font-weight: 700 !important;
+}
 .active\:opacity-80:active {
   opacity: 0.8;
 }
-
 @media (min-width: 768px) {
 
   .md\:bottom-\[-200px\] {
@@ -940,7 +943,6 @@ video {
     line-height: 67.6px;
   }
 }
-
 @media (min-width: 1024px) {
 
   .lg\:bottom-\[-157px\] {
