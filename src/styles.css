@@ -2,16 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .header_active {
   color: #00856F !important;
   border-bottom: 1px solid #00856F !important;
   font-weight: 700 !important;
 }
 
-.avtive_2 {
-  color: white !important;
-  border-bottom: 1px solid white !important;
-  font-weight: 700 !important;
+
+.active_2 {
+  color: white ;
+  border-bottom: 1px solid white  !important;
+  font-weight: 700 ;
 }
 
 .btn_hover:hover {
@@ -24,6 +26,12 @@
   transition: .3s ease;
   color: white;
   background-color: #00856F;
+}
+
+.header_btn_hover_2:hover {
+  background-color: #fff !important;
+  color: #00856F !important;
+  transition: .3s ease;
 }
 
 ::-webkit-scrollbar {
